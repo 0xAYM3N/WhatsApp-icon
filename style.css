@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #121212;
+}
+
+.icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.icon i {
+  display: block;
+  font-size: 35px;
+  padding: auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #2db742;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  background-color: #fff;
+  position: fixed;
+  bottom: 140px;
+  left: 30px;
+  right: unset;
+  z-index: 1001;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px 5px;
+  width: 320px;
+  bottom: 100px;
+  transition: 1s;
+  animation: fadeOutDown 0.3s ease-in-out;
+  animation-fill-mode: both;
+}
+
+.popup.show {
+  display: block;
+  display: block;
+  animation: fadeInUp 0.3s ease-in-out;
+}
+
+.popup .title {
+  display: flex;
+  align-items: center;
+  background: #2db742;
+  color: #fff;
+  font-size: 25px;
+  padding: 20px 20px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.popup .title i {
+  font-size: 30px;
+}
+
+.popup .title h3 {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.popup a {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.popup .link {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.popup .link p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.popup .link .link-content a {
+  display: flex;
+  border-left: 2px solid #2db742;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-block: 10px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.popup .link .link-content img {
+  width: 40px;
+}
+
+.popup .link .link-content span {
+  font-size: 14px;
+  color: #000;
+  margin-left: 20px;
+  font-weight: 400;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
