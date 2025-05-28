@@ -1,6 +1,6 @@
 # WhatsApp Icon
 
-A simple web-based component to display a custom WhatsApp icon using HTML, CSS, and JavaScript.
+A simple component to display a WhatsApp icon using HTML, CSS, and JavaScript.
 
 ## 🖼️ Preview
 
